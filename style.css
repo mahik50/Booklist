@@ -34,7 +34,7 @@ form {
     padding: 5px;
 }
 .table-section div:last-child {
-    gap: 5px; /* spacing between buttons */
+    gap: 5px; 
 }
 .table-section button {
     margin: 0;
@@ -64,9 +64,9 @@ form {
 #book-list {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* ✅ This will center each book row */
+    align-items: center;
     border: 1px solid black;
     padding: 5px;
     max-width: 600px;
-    margin: 0 auto; /* optional: center the whole list block */
+    margin: 0 auto;
 }
