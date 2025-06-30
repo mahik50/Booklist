@@ -38,15 +38,12 @@ function addBook(title, author, year) {
     </div>
   `;
 
-  // Append to list
   document.querySelector('#book-list').appendChild(row);
 
-  // Edit handler
   row.querySelector('.editBtn').addEventListener('click', () => {
     enterEditMode(row);
   });
 
-  // Delete handler
   row.querySelector('.deleteBtn').addEventListener('click', () => {
     row.remove();
   });
