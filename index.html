@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Booklist</title>
+</head>
+<body>
+  <section class="container">
+    <h1>My Booklist</h1>
+    <form id="book-form">
+      <p>
+        <label for="title">Book Name</label>
+        <input type="text" id="title" required />
+      </p>
+      <p>
+        <label for="author">Book Author</label>
+        <input type="text" id="author" required />
+      </p>
+      <p>
+        <label for="year">Published Year</label>
+        <input type="number" id="year" required />
+      </p>
+      <button type="submit" id="addBtn" name="action" value="add">Add Book</button>
+    </form>
+
+    <section class="table-section" style="font-weight: bold;">
+      <div>Title</div>
+      <div>Author</div>
+      <div>Year</div>
+      <div>Action</div>
+    </section>
+    <section id="book-list"></section>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>

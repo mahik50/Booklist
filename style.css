@@ -1,0 +1,72 @@
+ body {
+    background-image: linear-gradient(rgb(5, 5, 29),rgb(2, 2, 24));
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    color: white;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+h1{
+    color: #C1FD41;
+}
+form {
+    padding: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+.table-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table-section div {
+    border: 1px solid black;
+    background-color: white;
+    min-width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    padding: 5px;
+}
+.table-section div:last-child {
+    gap: 5px; /* spacing between buttons */
+}
+.table-section button {
+    margin: 0;
+    padding: 3px 6px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+#addBtn{
+    border: 3px solid #C1FD41;
+    border-radius: 15px;
+    background-color: black;
+    color: white;
+    padding: 4px;
+}
+.action-cell {
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-row div {
+    background-color: #C1FD41;
+    color: black;
+    font-weight: bold;
+}
+#book-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* ✅ This will center each book row */
+    border: 1px solid black;
+    padding: 5px;
+    max-width: 600px;
+    margin: 0 auto; /* optional: center the whole list block */
+}
