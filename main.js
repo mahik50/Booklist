@@ -50,18 +50,18 @@ function addBook(title, author, year) {
 }
 
 function enterEditMode(row) {
-  const cells = row.querySelectorAll('div');
-  document.querySelector('#title').value = cells[0].textContent;
-  document.querySelector('#author').value = cells[1].textContent;
-  document.querySelector('#year').value = cells[2].textContent;
+  const cell = row.querySelectorAll('div');
+  document.querySelector('#title').value = cell[0].textContent;
+  document.querySelector('#author').value = cell[1].textContent;
+  document.querySelector('#year').value = cell[2].textContent;
 
   isEditing = true;
   editTargetRow = row;
 }
 
 function updateBook(row, newTitle, newAuthor, newYear) {
-  const cells = row.querySelectorAll('div');
-  cells[0].textContent = newTitle;
-  cells[1].textContent = newAuthor;
-  cells[2].textContent = newYear;
+  const cell = row.querySelectorAll('div');
+  cell[0].textContent = newTitle;
+  cell[1].textContent = newAuthor;
+  cell[2].textContent = newYear;
 }
